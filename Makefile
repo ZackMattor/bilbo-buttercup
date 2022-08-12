@@ -5,8 +5,8 @@ CPPFLAGS=-g $(shell root-config --cflags)
 LDFLAGS=-g $(shell root-config --ldflags)
 LDLIBS=$(shell root-config --libs)
 
-SRCS := $(wildcard src/*.cc)
-OBJS=$(subst .cc,.o,$(SRCS))
+SRCS := $(wildcard src/*.c)
+OBJS=$(subst .c,.o,$(SRCS))
 
 all: mud
 
